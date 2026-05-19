@@ -27,6 +27,27 @@ td:first-child { font-weight: 650; color: #513b29; }
 .toc a { color: #68400f; text-decoration: none; }
 .source-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
 .source-links a { color: #68400f; font-size: 15px; line-height: 1.5; text-decoration: underline; text-underline-offset: 3px; }
+.reader-framework { border-block: 1px solid #e6dac8; padding: 30px 0 34px; margin: 0 0 34px; }
+.framework-eyebrow { color: #7d5935; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 6px; }
+.framework-intro { max-width: 760px; color: #35414c; }
+.mind-map { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; align-items: stretch; margin: 22px 0 26px; }
+.mind-core { grid-column: span 2; min-height: 150px; border: 2px solid #6d481f; background: #efe2cf; color: #241b13; display: flex; flex-direction: column; justify-content: center; padding: 20px; }
+.mind-core span { font-size: 24px; line-height: 1.25; font-weight: 780; }
+.mind-core small { font-family: Georgia, "Times New Roman", serif; font-size: 16px; color: #68400f; margin-top: 8px; }
+.mind-node { border: 1px solid #e4d7c5; background: #fffaf1; padding: 14px; min-height: 150px; display: grid; grid-template-rows: auto auto auto 1fr; gap: 5px; }
+.mind-node b { width: 28px; height: 28px; border-radius: 50%; background: #6d481f; color: #fffaf1; display: inline-grid; place-items: center; font-size: 14px; }
+.mind-node span { color: #1d252c; font-weight: 740; line-height: 1.35; }
+.mind-node small { font-family: Georgia, "Times New Roman", serif; color: #7c5d3f; line-height: 1.35; }
+.mind-node em { color: #4d5964; font-size: 14px; line-height: 1.55; font-style: normal; margin-top: 4px; }
+.stage-roadmap, .reading-lenses { margin-top: 24px; }
+.stage-roadmap h3, .reading-lenses h3 { margin-top: 0; }
+.stage-track { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.stage-card { border-top: 4px solid #7d5935; background: #fbf7ef; padding: 14px; }
+.stage-index { width: 30px; height: 30px; border: 1px solid #b89a72; display: grid; place-items: center; color: #68400f; font-weight: 760; margin-bottom: 10px; }
+.stage-card h4 { font-size: 18px; line-height: 1.3; margin: 0 0 10px; }
+.stage-card h4 span { display: block; font-family: Georgia, "Times New Roman", serif; color: #7c5d3f; font-size: 14px; font-weight: 500; margin-top: 2px; }
+.stage-card p { font-size: 14px; line-height: 1.58; margin: 0 0 8px; }
+.framework-table td:first-child { width: 18%; }
 .page { margin: 32px 0; }
 .page-marker { font-size: 12px; color: #9a8978; margin: 24px 0 10px; }
 .record { margin-bottom: 18px; }
@@ -37,6 +58,13 @@ td:first-child { font-weight: 650; color: #513b29; }
 .source-text p { font-family: Georgia, "Times New Roman", serif; color: #34404b; font-size: 15px; line-height: 1.65; margin: 0 0 10px; }
 .source-text ul, .source-text ol { font-family: Georgia, "Times New Roman", serif; color: #34404b; font-size: 15px; line-height: 1.6; margin: 0 0 10px; }
 .source-table { font-family: Georgia, "Times New Roman", serif; font-size: 14px; line-height: 1.45; }
+@media (max-width: 720px) {
+main { padding: 28px 18px 64px; }
+h1 { font-size: 32px; }
+.mind-map, .stage-track { grid-template-columns: 1fr; }
+.mind-core { grid-column: span 1; min-height: auto; }
+table { font-size: 14px; display: block; overflow-x: auto; }
+}
 </style>
 </head>
 <body><main>
@@ -46,6 +74,41 @@ td:first-child { font-weight: 650; color: #513b29; }
 <p class="en-title">The Founder’s Playbook: Building an AI-Native Startup</p>
 <p>双语阅读版：中文正文，英文原文默认折叠。</p>
 <p class="source-links"><a href="pdfs/founders-playbook.pdf" target="_blank" rel="noopener">原文 PDF / Source PDF</a></p>
+</section>
+<section class="reader-framework" aria-labelledby="framework-title">
+<p class="framework-eyebrow">阅读框架 / Reader Framework</p>
+<h2 id="framework-title">先建立全书地图 / Build the Map First</h2>
+<p class="framework-intro">这本书的主线不是“更快写代码”，而是把创始人的判断、验证、发布和规模化工作重新组织成一个 AI 原生的学习系统。</p>
+<div class="mind-map" aria-label="Founder Playbook mind map">
+<div class="mind-core"><span>AI 原生创始人生命周期</span><small>AI-native founder lifecycle</small></div>
+<article class="mind-node"><b>1</b><span>生命周期重启</span><small>AI-native startup lifecycle</small><em>重新理解 2026 年初创公司从想法到规模化的节奏。</em></article>
+<article class="mind-node"><b>2</b><span>创始人定义变化</span><small>Founder definition</small><em>把创始人工作拆成可被 AI 放大的判断、沟通与执行系统。</em></article>
+<article class="mind-node"><b>3</b><span>创意阶段</span><small>Idea stage</small><em>先证明问题真实、具体、频繁，再投入构建。</em></article>
+<article class="mind-node"><b>4</b><span>MVP 阶段</span><small>MVP stage</small><em>用最小产品验证问题-解决方案匹配，而不是验证最初假设。</em></article>
+<article class="mind-node"><b>5</b><span>发布阶段</span><small>Launch stage</small><em>把发布当成学习系统，围绕真实用户反馈快速迭代。</em></article>
+<article class="mind-node"><b>6</b><span>规模化阶段</span><small>Scale stage</small><em>用流程、指标和组织节奏放大已验证的增长。</em></article>
+<article class="mind-node"><b>7</b><span>同样的工作，新规则</span><small>Same job, new rules</small><em>把 Claude 嵌入研究、产品、工程和运营的日常工作流。</em></article>
+</div>
+<div class="stage-roadmap" aria-label="Startup lifecycle roadmap">
+<h3>生命周期路线图 / Lifecycle Roadmap</h3>
+<div class="stage-track">
+<article class="stage-card"><div class="stage-index">1</div><h4>创意 <span>Idea</span></h4><p><strong>关键问题：</strong>问题是否真实</p><p><strong>证据：</strong>访谈、证据、竞争格局</p><p><strong>Claude 用法：</strong>Chat 做研究与访谈分析</p></article>
+<article class="stage-card"><div class="stage-index">2</div><h4>MVP <span>MVP</span></h4><p><strong>关键问题：</strong>方案是否有效</p><p><strong>证据：</strong>原型、第一批用户、使用信号</p><p><strong>Claude 用法：</strong>Claude Code 加速第一版产品</p></article>
+<article class="stage-card"><div class="stage-index">3</div><h4>发布 <span>Launch</span></h4><p><strong>关键问题：</strong>市场是否回应</p><p><strong>证据：</strong>发布渠道、反馈闭环、留存线索</p><p><strong>Claude 用法：</strong>Claude Cowork 管理内容与运营</p></article>
+<article class="stage-card"><div class="stage-index">4</div><h4>规模化 <span>Scale</span></h4><p><strong>关键问题：</strong>系统是否可复制</p><p><strong>证据：</strong>指标、流程、团队协同</p><p><strong>Claude 用法：</strong>多界面协作形成增长系统</p></article>
+</div>
+</div>
+<div class="reading-lenses" aria-label="Reading lenses">
+<h3>读者速查框架 / Reader Checklist</h3>
+<table class="framework-table">
+<thead><tr><th>阅读任务</th><th>要抓住的判断</th><th>重点章节</th></tr></thead>
+<tbody>
+<tr><td>验证问题</td><td>先找可被反复观察到的痛点，避免为了构建而构建。</td><td>第 3 章</td></tr>
+<tr><td>验证方案</td><td>让 MVP 回答真实用户是否愿意使用、付费或继续投入。</td><td>第 4 章</td></tr>
+<tr><td>验证市场</td><td>用发布反馈判断定位、渠道和信息是否成立。</td><td>第 5 章</td></tr>
+<tr><td>验证系统</td><td>把有效动作变成流程、指标和团队习惯。</td><td>第 6-7 章</td></tr>
+</tbody></table>
+</div>
 </section>
 <nav class="toc"><h2>目录 / Contents</h2><ol>
 <li><a href="#page-3">第 1 章 为 2026 年重启的初创公司生命周期 / Chapter 1: The Startup Lifecycle Rebooted for 2026</a></li>
