@@ -16,6 +16,10 @@ h3 { font-size: 20px; margin: 28px 0 10px; color: #71491f; }
 p { font-size: 17px; line-height: 1.78; margin: 0 0 14px; }
 ul, ol { font-size: 17px; line-height: 1.72; padding-left: 1.35rem; }
 li { margin: 7px 0; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 24px; font-size: 16px; line-height: 1.55; }
+th, td { border: 1px solid #e4d7c5; padding: 11px 12px; vertical-align: top; text-align: left; }
+th { background: #f3eadc; color: #4d3520; font-weight: 700; }
+td:first-child { font-weight: 650; color: #513b29; }
 .toc { border: 1px solid #eadfce; background: #fbf7ef; padding: 18px 22px; margin: 24px 0 42px; }
 .toc a { color: #68400f; text-decoration: none; }
 .page { margin: 32px 0; }
@@ -29,28 +33,27 @@ li { margin: 7px 0; }
 <body><main>
 <section class="cover">
 <div class="kicker">Anthropic Enterprise Ebook</div>
-<h1>企业 AI 指南：Anthropic 电子书</h1>
+<h1>企业 AI 指南：Anthropic 电子书 / Building Trusted AI in the Enterprise</h1>
 <p class="en-title">Building Trusted AI in the Enterprise</p>
 <p>双语阅读版：中文正文，英文原文默认折叠。</p>
 </section>
 <nav class="toc"><h2>目录 / Contents</h2><ol>
-<li><a href="#page-1">在企业中构建可信赖的 AI</a></li>
-<li><a href="#page-3">业务影响已经清晰可见</a></li>
-<li><a href="#page-4">阶段 1：制定 AI 战略 ........................ 第 4 页</a></li>
-<li><a href="#page-5">阶段 1：</a></li>
-<li><a href="#page-12">安全与合规</a></li>
-<li><a href="#page-13">阶段 1：基础建设（第 1–3 个月）</a></li>
-<li><a href="#page-14">阶段 2：试点实施（第 4–6 个月）</a></li>
-<li><a href="#page-21">提示工程</a></li>
-<li><a href="#page-24">评估</a></li>
-<li><a href="#page-29">部署</a></li>
+<li><a href="#page-1">在企业中构建可信赖的 AI / Building Trusted AI in the Enterprise</a></li>
+<li><a href="#page-3">业务影响已经清晰可见 / The Business Impact Is Already Clear</a></li>
+<li><a href="#page-4">阶段 1：制定 AI 战略 ........................ 第 4 页 / English</a></li>
+<li><a href="#page-5">阶段 1： / English</a></li>
+<li><a href="#page-7">技术 / Technology: AI Strategy Stage</a></li>
+<li><a href="#page-12">安全与合规 / Security and Compliance</a></li>
+<li><a href="#page-13">阶段 1：基础建设（第 1–3 个月） / Stage 1: Foundation Building (Months 1-3)</a></li>
+<li><a href="#page-14">阶段 2：试点实施（第 4–6 个月） / Stage 2: Pilot Implementation (Months 4-6)</a></li>
+<li><a href="#page-16">创造业务价值 / Create Business Value</a></li>
+<li><a href="#page-18">生产力 / Productivity</a></li>
 </ol></nav>
 <section class="page" id="page-1">
 <div class="page-marker">原 PDF 第 1 页 / Source page 1</div>
 <div class="record" data-record-id="p001-b001">
-<h2>在企业中构建可信赖的 AI</h2>
 <p>Anthropic 指南：基于真实案例和最佳实践，助你启动、扩展并取得成功</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Building<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Building<br>
 trusted<br>
 AI in the<br>
 enterprise<br>
@@ -63,7 +66,7 @@ examples and best practices</div></details>
 <div class="page-marker">原 PDF 第 2 页 / Source page 2</div>
 <div class="record" data-record-id="p002-b001">
 <p>生成式 AI（GenAI）的整合已从流行语走向实际收益，早期采用者在关键业务职能中报告了显著的生产力提升和有意义的收入增长。从客户服务团队将响应时间缩短一半，到营销团队在数天内生成数月内容，如今已被验证的企业成功案例表明，实施 GenAI 不只是改善运营，更是在重塑未来数年的竞争优势。</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">The integration of Generative AI (GenAI)<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">The integration of Generative AI (GenAI)<br>
 has moved from buzzword to bottom line,<br>
 with early adopters reporting impressive<br>
 productivity gains and meaningful revenue<br>
@@ -80,12 +83,18 @@ competitive advantage for years to come.</div></details>
 <section class="page" id="page-3">
 <div class="page-marker">原 PDF 第 3 页 / Source page 3</div>
 <div class="record" data-record-id="p003-b001">
-<h2>业务影响已经清晰可见</h2>
+<h2>业务影响已经清晰可见 / The Business Impact Is Already Clear</h2>
 <p>大型语言模型（LLM）的早期采用者已经看到了显著成果：</p>
 <ul>
 <li>客户支持团队对咨询的响应速度提高了 20-35%</li>
+</ul>
+<ul>
 <li>工程团队将编码时间减少了 15%</li>
+</ul>
+<ul>
 <li>内容创作者的工作速度提高了 30-50%</li>
+</ul>
+<ul>
 <li>后台运营效率提高了 20-50%¹</li>
 </ul>
 <p>也许最引人注目的是，表现最佳的企业将超过 10% 的收益归因于生成式 AI 的实施。²</p>
@@ -93,7 +102,7 @@ competitive advantage for years to come.</div></details>
 <p>本指南分享了成功完成这一转型的组织所积累的经验和真实案例。以下是我们将遵循的框架：</p>
 <p>1. Bain &amp; Company Technology Report 2024</p>
 <p>2. McKinsey State of AI report 2024</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">The business impact is<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">The business impact is<br>
 already clear<br>
 Early adopters of large language models (LLMs) are already<br>
 seeing remarkable results:<br>
@@ -118,12 +127,8 @@ transformation. Here’s the framework we’ll be following:<br>
 <section class="page" id="page-4">
 <div class="page-marker">原 PDF 第 4 页 / Source page 4</div>
 <div class="record" data-record-id="p004-b001">
-<h2>阶段 1：制定 AI 战略 ........................ 第 4 页</h2>
-<h2>阶段 2：创造业务价值 ...................... 第 15 页</h2>
-<h2>阶段 3：为生产环境构建 .................... 第 20 页</h2>
-<h2>阶段 4：部署 ................................ 第 28 页</h2>
-<p>迭代、改进与扩展</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Stage 1: Develop AI strategy ......................... pg<br>
+<h2>迭代、改进与扩展 / Iterate, Improve, and Scale</h2>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Stage 1: Develop AI strategy ......................... pg<br>
 Stage 2: Create business value .................... pg 15<br>
 Stage 3: Build for production ...................... pg 20<br>
 Stage 4: Deploy ............................................ pg 28<br>
@@ -133,18 +138,17 @@ iterate, improve &amp; expand</div></details>
 <section class="page" id="page-5">
 <div class="page-marker">原 PDF 第 5 页 / Source page 5</div>
 <div class="record" data-record-id="p005-b001">
-<h2>阶段 1：</h2>
-<p>制定你的 AI 战略</p>
+<h2>制定你的 AI 战略 / Develop Your AI Strategy</h2>
 <p>成功的企业 AI 战略需要一种三维方法，涵盖人员、流程和技术。每个维度都需要得到专门关注，以确保全面实施和可持续采用。</p>
-<p>人员</p>
+<h2>人员 / People</h2>
 <p>高管一致性与支持</p>
 <p>通过阐明将 AI 计划与业务成果相连接的战略愿景，获得高管认同。清晰说明生成式 AI 将在组织生产力、增长和成功中发挥的作用。规划初始批准之后的持续领导层参与，并围绕时间表和影响提供现实的指导。</p>
 <p>治理与监督</p>
 <p>治理不应事后才考虑。建立 AI 审查委员会，定义伦理准则，并创建透明的模型评估和事件响应流程。目标是在保持推进势头的同时建立信任。</p>
-<p>流程</p>
+<h2>流程 / Process</h2>
 <p>试点选择与设计</p>
 <p>避免因诱惑或外部压力而首先处理最大的机会。理想的试点应取得平衡：既要足够重要</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Stage 1:<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Stage 1:<br>
 Develop your AI strategy<br>
 A successful enterprise AI strategy requires a three-dimensional<br>
 approach encompassing people, processes, and technology.<br>
@@ -172,30 +176,17 @@ opportunities first. An ideal pilot strikes a balance: significant</div></detail
 <section class="page" id="page-6">
 <div class="page-marker">原 PDF 第 6 页 / Source page 6</div>
 <div class="record" data-record-id="p006-b001">
-<p>示例用例</p>
-<p>外部，</p>
-<p>以收入为导向</p>
-<p>内部，</p>
-<p>以成本和风险为导向</p>
-<p>更好的客户体验</p>
-<p>提升团队生产力与创造力</p>
-<p>优化业务流程</p>
-<p>高级聊天机器人：</p>
-<p>实时处理客户问题和咨询</p>
-<p>代码生成：</p>
-<p>快速创建和优化程序代码</p>
-<p>欺诈检测：</p>
-<p>主动识别并缓解欺诈活动</p>
-<p>智能体辅助：</p>
-<p>在不增加人员编制的情况下提供更高水平的支持</p>
-<p>数据分析：</p>
-<p>解读复杂数据集并生成洞察</p>
-<p>文档处理：</p>
-<p>解析和总结文本以识别关键信息</p>
-<p>足以展示真实价值，又要范围可控，能够快速交付结果。考虑那些拥有积极业务发起人、数据可用性清晰、合规要求可管理的用例。</p>
-<p>在识别试点机会时，思考哪些摩擦点可以通过 AI 解决，并利用组织内部已有的惯性，同时鼓励快速迭代和实验。这将形成一个中央基础，使各团队能够继续在流程和工具中扩大 AI 的采用。</p>
-<p>常见用例包括：</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Example use cases<br>
+<h2>示例用例 / Example Use Cases</h2>
+<p>理想的试点应足以展示真实价值，同时范围可控，能够快速交付结果。选择用例时，应优先考虑业务发起人积极、数据可用性清晰、合规要求可管理的场景。</p>
+<p>在识别试点机会时，思考哪些摩擦点可以通过 AI 解决，并利用组织内部已有的惯性，同时鼓励快速迭代和实验。常见用例包括：</p>
+<table class="semantic-table">
+<thead><tr><th>方向</th><th>目标</th><th>代表用例</th></tr></thead>
+<tbody>
+<tr><td rowspan="2">外部：以收入为导向</td><td>更好的客户体验</td><td>高级聊天机器人：实时处理客户问题和咨询<br>智能体辅助：在不增加人员编制的情况下提供更高水平的支持</td></tr>
+<tr><td>提升团队生产力与创造力</td><td>代码生成：快速创建和优化程序代码<br>数据分析：解读复杂数据集并生成洞察</td></tr>
+<tr><td>内部：以成本和风险为导向</td><td>优化业务流程</td><td>欺诈检测：主动识别并缓解欺诈活动<br>文档处理：解析和总结文本以识别关键信息</td></tr>
+</tbody></table>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Example use cases<br>
 External,<br>
 revenue-oriented<br>
 Internal,<br>
@@ -259,25 +250,37 @@ Common use cases include:</div></details>
 <p>性能阈值</p>
 <ul>
 <li>准确性指标</li>
+</ul>
+<ul>
 <li>速度改进与延迟指标</li>
+</ul>
+<ul>
 <li>成本效率</li>
 </ul>
 <p>运营就绪度</p>
 <ul>
 <li>系统稳定性</li>
+</ul>
+<ul>
 <li>支持基础设施</li>
+</ul>
+<ul>
 <li>团队能力</li>
 </ul>
 <p>风险管理基础设施</p>
 <ul>
 <li>安全合规</li>
+</ul>
+<ul>
 <li>数据保护</li>
+</ul>
+<ul>
 <li>运营控制</li>
 </ul>
-<p>技术</p>
-<p>技术基础</p>
+<h2>技术 / Technology: AI Strategy Stage</h2>
+<p>基础</p>
 <p>从 AI 视角评估你现有的基础设施。这意味着不仅要关注基本计算资源，还要理解数据架构成熟度、集成能力，以及 AI 开发和部署所需的工具。</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Scaling framework<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Scaling framework<br>
 Successful organizations develop clear “graduation criteria”<br>
 that determine when pilots are ready for broader deployment,<br>
 and to prevent projects from getting stuck in the “pilot” phase.<br>
@@ -309,19 +312,25 @@ and the tooling needed for AI development and deployment.</div></details>
 <div class="page-marker">原 PDF 第 8 页 / Source page 8</div>
 <div class="record" data-record-id="p008-b001">
 <p>你需要的不只是大量数据。你的数据应当高质量、可访问，并符合监管要求。创建和维护这样的数据需要成熟的数据治理框架、清晰的所有权结构，以及用于持续数据质量管理的自动化流程。</p>
-<p>技术实施路线图：</p>
+<p>实施路线图：</p>
 <p>应用复杂度递增</p>
 <p>在组织内扩大 AI 项目的范围和复杂度，需要技术成熟度同步提升。正如 Web 应用从静态页面演进到复杂的分布式系统一样，AI 实施也会经历能力和复杂度不断提高的类似旅程。成功在生产环境中部署 AI，通常会自然地经历几个不同的技术成熟度层级。</p>
 <p>级别 1：基础实施 - 起步</p>
 <p>这一旅程始于直接的实施，重点是用户与 AI 模型之间的直接交互。在这一阶段，组织通常关注：</p>
 <ul>
 <li>具有清晰输入/输出模式的简单聊天交互</li>
+</ul>
+<ul>
 <li>基础提示词工程以改进响应</li>
+</ul>
+<ul>
 <li>不经过复杂处理的直接模型响应</li>
+</ul>
+<ul>
 <li>没有大量上下文的单轮对话</li>
 </ul>
 <p>这一层级非常适合初始概念验证项目，并帮助团队熟悉 AI 能力。可以把它类比为创建静态网页：这是关键的第一步，用于建立基础理解。</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">You will need more than just large volumes of data. Your<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">You will need more than just large volumes of data. Your<br>
 data should be high-quality, accessible, and compliant with<br>
 regulatory requirements. Creating and maintaining such data<br>
 demands sophisticated data governance frameworks, clear<br>
@@ -358,9 +367,17 @@ builds foundational understanding.</div></details>
 <p>随着组织获得信心和经验，它们通常会转向更复杂的实施方式，以增强 AI 的能力：</p>
 <ul>
 <li>使用结构化提示和模板，确保输出一致</li>
+</ul>
+<ul>
 <li>集成基础工具，扩展功能</li>
+</ul>
+<ul>
 <li>使用知识检索系统（RAG）提高准确性</li>
+</ul>
+<ul>
 <li>通过上下文管理支持多轮对话</li>
+</ul>
+<ul>
 <li>基础工作流集成</li>
 </ul>
 <p>在这一阶段，许多组织开始看到显著的商业价值，因为 AI 系统能够处理更复杂的任务，并与现有业务流程集成。</p>
@@ -368,12 +385,20 @@ builds foundational understanding.</div></details>
 <p>最复杂的实施方式会将 AI 从简单的问答工具转变为能够自主执行复杂任务的智能体：</p>
 <ul>
 <li>集成多种工具，提供多样化能力</li>
+</ul>
+<ul>
 <li>复杂的多步骤工作流</li>
+</ul>
+<ul>
 <li>具备决策能力的智能体系统</li>
+</ul>
+<ul>
 <li>高级记忆与上下文管理</li>
+</ul>
+<ul>
 <li>复杂的错误处理与自我纠正</li>
 </ul>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Level 2: Intermediate implementation - adding<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Level 2: Intermediate implementation - adding<br>
 intelligence<br>
 As organizations gain confidence and experience, they<br>
 typically move to more sophisticated implementations that<br>
@@ -411,7 +436,7 @@ execute complex tasks autonomously:<br>
 <p>3. 用于选择适当行动的决策框架</p>
 <p>4. 用于保持上下文的记忆系统</p>
 <p>5. 以完成任务为目标的行为</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">UNDERSTANDING TOOLS AND AGENTS<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">UNDERSTANDING TOOLS AND AGENTS<br>
 As organizations progress in their AI journey, two key<br>
 concepts become increasingly important: tools and agents.<br>
 These capabilities represent the frontier of enterprise<br>
@@ -445,7 +470,7 @@ actions<br>
 <p>记忆</p>
 <p>LLM 智能体 规划 工具</p>
 <p>行动</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Common examples include agents that can browse the web,<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Common examples include agents that can browse the web,<br>
 interact with APIs, or operate computer systems to accomplish<br>
 tasks. Anthropic will continue to evolve Claude with ongoing<br>
 research and training to make Claude even more reliable, safe,<br>
@@ -458,30 +483,42 @@ Actions</div></details>
 <section class="page" id="page-12">
 <div class="page-marker">原 PDF 第 12 页 / Source page 12</div>
 <div class="record" data-record-id="p012-b001">
-<h2>安全与合规</h2>
+<h2>安全与合规 / Security and Compliance</h2>
 <p>你需要一个全面的安全框架，涵盖从数据隐私到模型安全的各个方面，同时确保所有系统都满足监管要求。</p>
 <p>关键安全与合规组件：</p>
 <p>数据保护</p>
 <ul>
 <li>加密标准</li>
+</ul>
+<ul>
 <li>访问控制</li>
+</ul>
+<ul>
 <li>隐私措施</li>
 </ul>
 <p>合规管理</p>
 <ul>
 <li>监管要求</li>
+</ul>
+<ul>
 <li>行业标准</li>
+</ul>
+<ul>
 <li>内部政策</li>
 </ul>
 <p>监控与审计</p>
 <ul>
 <li>活动日志记录</li>
+</ul>
+<ul>
 <li>性能跟踪</li>
+</ul>
+<ul>
 <li>合规报告</li>
 </ul>
 <p>“在 WPP，我们不断寻求突破创造力边界的方法，并为客户交付卓越成果。通过与 AWS 和 Anthropic 等全球领先的科技公司合作，我们正在利用前沿 AI 的力量来增强流程、赋能员工并推动创新。”</p>
 <p>Stephan Pretorius，WPP 首席技术官</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">SECURITY AND COMPLIANCE<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">SECURITY AND COMPLIANCE<br>
 You’ll need a comprehensive security framework that<br>
 addresses everything from data privacy to model security,<br>
 while ensuring all systems meet regulatory requirements.<br>
@@ -515,14 +552,18 @@ Stephan Pretorius, Chief Technology Officer at WPP</div></details>
 <p>成功构建与规模化</p>
 <p>要成功将 AI 嵌入企业运营，需要采取有节制、循序渐进的方法。最成功的企业 AI 项目会像复利一样发展——每个阶段都会放大此前投资的价值。这一旅程分为四个关键阶段，每个阶段都会同时扩展技术深度和运营广度。</p>
 <p>注：我们合作的许多公司在具备适当的动力和合作水平时，能够显著加快这一实施时间表，将这个 13 个月以上的实施过程压缩到数月，甚至数周。FeatherSnap 在不到 90 天内将 Amazon Bedrock 中的 Claude 集成到其智能喂鸟器中，而 DoorDash 仅用 2 个月就构建了一个语音操作的自助式生成式 AI 联络中心解决方案。</p>
-<h2>阶段 1：基础建设（第 1–3 个月）</h2>
+<h2>阶段 1：基础建设（第 1–3 个月） / Stage 1: Foundation Building (Months 1-3)</h2>
 <p>初始阶段重点是建立可持续采用 AI 所需的基础设施和组织框架。在这关键的最初几个月中，组织往往专注于三个核心目标：</p>
 <ul>
 <li>建立稳健的治理结构，在创新与风险管理之间取得平衡</li>
+</ul>
+<ul>
 <li>定义与业务目标一致的全面技术需求</li>
+</ul>
+<ul>
 <li>建立并赋能一支具备多元技能和明确授权的核心团队</li>
 </ul>
-<details class="source-fold"><summary>English original</summary><div class="source-text">PLANNING AND FUTURE-<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">PLANNING AND FUTURE-<br>
 PROOFING YOUR AI IMPLEMENTATION<br>
 Project implementation roadmap:<br>
 Building and scaling with success<br>
@@ -557,23 +598,33 @@ clear mandates</div></details>
 <div class="page-marker">原 PDF 第 14 页 / Source page 14</div>
 <div class="record" data-record-id="p014-b001">
 <p>这一基础阶段至关重要，因为它可以防止 AI 项目失败的三个最常见原因：治理不一致、技术债务和人才缺口。通过及早建立清晰的监督结构、技术标准和团队能力，组织可以避免在问题出现后再回头补建这些关键要素所带来的高昂成本。</p>
-<h2>阶段 2：试点实施（第 4–6 个月）</h2>
+<h2>阶段 2：试点实施（第 4–6 个月） / Stage 2: Pilot Implementation (Months 4-6)</h2>
 <p>基础就绪后，组织随后进入实验阶段，理论在这里接受实践检验。该阶段的特点包括：</p>
 <ul>
 <li>启动经过审慎选择的初始项目，在影响力与可控风险之间取得平衡</li>
+</ul>
+<ul>
 <li>开发全面的指标框架，用于衡量技术成果和业务成果</li>
+</ul>
+<ul>
 <li>建立领导层和组织对 AI 输出及 AI 辅助工作流的信任</li>
+</ul>
+<ul>
 <li>创建系统化反馈闭环，以捕捉经验并支持快速迭代</li>
 </ul>
 <p>这一阶段的成功取决于在宏大目标与现实限制之间保持平衡，使团队能够快速学习和适应。</p>
-<h2>阶段 3：战略性规模化（第 7–12 个月）</h2>
+<h2>阶段 3：战略性规模化（第 7–12 个月） / Stage 3: Strategic Scaling (Months 7-12)</h2>
 <p>随着试点项目证明成功，组织进入关键的规模化阶段。这一时期重点关注：</p>
 <ul>
 <li>将成功试点扩展到不同业务部门和用例</li>
+</ul>
+<ul>
 <li>基于早期经验和运营数据优化流程</li>
+</ul>
+<ul>
 <li>通过培训和知识转移建设内部能力</li>
 </ul>
-<details class="source-fold"><summary>English original</summary><div class="source-text">This foundational phase is critical because it prevents the<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">This foundational phase is critical because it prevents the<br>
 three most common causes of AI project failure: misaligned<br>
 governance, technical debt, and talent gaps. By establishing<br>
 clear oversight structures, technical standards, and team<br>
@@ -613,13 +664,19 @@ transfer</div></details>
 <p>最后阶段的重点是将 AI 能力深度嵌入组织的运营结构中：</p>
 <ul>
 <li>基于全面的数据和经验完善策略</li>
+</ul>
+<ul>
 <li>增强自动化，以提高效率并降低运营开销</li>
+</ul>
+<ul>
 <li>在整个企业范围内扩展成功模式，同时保持质量和控制</li>
+</ul>
+<ul>
 <li>在各部门识别更多用例，并实施新的试点</li>
 </ul>
 <p>“我们已将创建临床研究报告所需时间从 12 周缩短到 10 分钟，同时输出质量更高，所需团队规模也大幅减少。就价值而言，一种药物每提前一天上市，就能为公司增加约 1500 万美元收入。”</p>
 <p>Waheed Jowiya，Novo Nordisk 数字化战略负责人</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">This phase requires careful attention to change management<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">This phase requires careful attention to change management<br>
 and systematic documentation of best practices to enable<br>
 successful replication of early wins.<br>
 Phase 4: Broad enterprise adoption (months 13+)<br>
@@ -645,7 +702,7 @@ Waheed Jowiya, Digitalisation Strategy Lead at Novo Nordisk</div></details>
 <div class="page-marker">原 PDF 第 16 页 / Source page 16</div>
 <div class="record" data-record-id="p016-b001">
 <p>第 2 阶段：</p>
-<p>创造业务价值</p>
+<h2>创造业务价值 / Create Business Value</h2>
 <p>根据我们的经验，表现最佳的 AI 团队会选择最优用例，以快速展示价值，并以此为基础扩展其 AI 战略。当你确定了用例以及衡量其成功的成功指标后，就需要选择合适的合作伙伴和 LLM，确保充分释放其潜力。</p>
 <p>识别具备试点成功潜力的用例</p>
 <p>企业中最适合作为起点的项目应具备以下特征：</p>
@@ -653,7 +710,7 @@ Waheed Jowiya, Digitalisation Strategy Lead at Novo Nordisk</div></details>
 <p>有意义且可衡量的成功指标。不要只关注技术性能。应寻找能够直接影响关键业务指标的用例，例如缩短处理时间、提高吞吐量或提升准确性。</p>
 <p>明确的投资回报率（ROI）。展示具体的投资回报率（ROI）能够建立组织信心，并支持更广泛的采用。</p>
 <p>业务关键，但安全风险较低。你的第一个用例不应承担极高的运营或安全风险。这样可以在不让关键运营面临风险的情况下，建立治理框架并积累机构知识。</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Stage 2:<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Stage 2:<br>
 Create business value<br>
 In our experience the highest performing AI teams choose the<br>
 optimal use case to demonstrate value quickly and scale their AI<br>
@@ -689,10 +746,12 @@ knowledge without putting critical operations at risk.</div></details>
 <p>定义你的成功标准</p>
 <p>良好的成功标准应具备：</p>
 <p>1. 具体。领先组织不会追求“提升性能”这类宽泛目标，而是定义具体、可执行的目标。例如，他们可能会设定“客户咨询分类准确率达到 95%”或“平均解决时间从 45 分钟缩短到 30 分钟”。</p>
-<p>2. 可衡量。使用量化指标或定义清晰的定性量表。考虑如何衡量抽象概念，例如将“负责任的 AI 部署”等目标转化为具体指标，如“在 10,000 次交互中，被标记为存在偏见的输出少于 0.1%”。</p>
+<p>2. 可衡量。使用量化指标或定义清晰的定性量表。考虑如何衡量抽象概念，例如将“负责任的 AI</p>
+<h3>部署 / Deployment: Create Business Value Stage</h3>
+<p>”等目标转化为具体指标，如“在 10,000 次交互中，被标记为存在偏见的输出少于 0.1%”。</p>
 <p>3. 与业务目标一致。最强的项目会将 AI 表现与核心业务目标关联起来，无论是运营效率、收入增长还是客户满意度。</p>
 <p>4. 有时间约束。创建能够跨多个时间跨度跟踪进展的衡量框架，从快速见效的成果到长期转型目标。</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Abundant data. Do you have enough data to support the use<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Abundant data. Do you have enough data to support the use<br>
 case, and is it in the format needed, with permission to use it?<br>
 Minimal disruption to existing processes. Consider parallel<br>
 deployment—running AI-enhanced processes alongside existing<br>
@@ -723,125 +782,17 @@ long-term transformation goals.</div></details>
 <section class="page" id="page-18">
 <div class="page-marker">原 PDF 第 18 页 / Source page 18</div>
 <div class="record" data-record-id="p018-b001">
-<p>不同用例的成功指标</p>
-<p>工单</p>
-<p>路由</p>
-<p>内容</p>
-<p>审核</p>
-<p>客户</p>
-<p>聊天机器人</p>
-<p>代码</p>
-<p>生成</p>
-<p>数据</p>
-<p>分析</p>
-<p></p>
-<p>路由</p>
-<p>准确率</p>
-<p></p>
-<p>误报率</p>
-<p></p>
-<p>每次</p>
-<p>对话成本</p>
-<p></p>
-<p>常规</p>
-<p>编码</p>
-<p>耗时</p>
-<p></p>
-<p>获得洞察</p>
-<p>所需时间</p>
-<p></p>
-<p>重新路由率</p>
-<p></p>
-<p>漏报率</p>
-<p></p>
-<p>对话</p>
-<p>完成率</p>
-<p></p>
-<p>代码中的</p>
-<p>缺陷和</p>
-<p>错误</p>
-<p></p>
-<p>决策</p>
-<p>准确性</p>
-<p></p>
-<p>解决</p>
-<p>所需时间</p>
-<p></p>
-<p>按类别</p>
-<p>准确率</p>
-<p></p>
-<p>平均</p>
-<p>解决时间</p>
-<p></p>
-<p>项目</p>
-<p>完成</p>
-<p>时间</p>
-<p></p>
-<p>处理更大</p>
-<p>且更多样</p>
-<p>数据集的</p>
-<p>能力</p>
-<p></p>
-<p>队列</p>
-<p>处理</p>
-<p>时间</p>
-<p></p>
-<p>用户流失</p>
-<p></p>
-<p>首次联系</p>
-<p>解决率</p>
-<p></p>
-<p>对编码</p>
-<p>标准的</p>
-<p>遵循度</p>
-<p></p>
-<p>客户对</p>
-<p>数据驱动</p>
-<p>产品或</p>
-<p>服务的</p>
-<p>满意度</p>
-<p></p>
-<p>每张工单</p>
-<p>成本</p>
-<p></p>
-<p>申诉</p>
-<p>数量</p>
-<p></p>
-<p>升级至</p>
-<p>人工客服</p>
-<p></p>
-<p>开发者</p>
-<p>生产力</p>
-<p></p>
-<p>常规任务</p>
-<p>消除</p>
-<p></p>
-<p>CSAT</p>
-<p></p>
-<p>每次审核</p>
-<p>成本</p>
-<p></p>
-<p>与聊天</p>
-<p>机器人互动的</p>
-<p>用户比例</p>
-<p></p>
-<p>代码复用</p>
-<p></p>
-<p>每次分析</p>
-<p>节省时间</p>
-<p></p>
-<p>处理量</p>
-<p></p>
-<p>社区健康度</p>
-<p></p>
-<p>CSAT</p>
-<p></p>
-<p>测试</p>
-<p>通过率</p>
-<p></p>
-<p>查询复杂度</p>
-<p>处理能力</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Success metrics for different use cases<br>
+<h2>不同用例的成功指标 / Success Metrics for Different Use Cases</h2>
+<table class="semantic-table">
+<thead><tr><th>用例</th><th>应上升的指标</th><th>应下降的指标</th></tr></thead>
+<tbody>
+<tr><td>工单路由</td><td>路由准确率、处理量</td><td>重新路由率、解决所需时间、队列处理时间、每张工单成本</td></tr>
+<tr><td>内容审核</td><td>按类别准确率、CSAT、社区健康度</td><td>误报率、漏报率、用户流失、申诉数量、每次审核成本</td></tr>
+<tr><td>客户聊天机器人</td><td>对话完成率、首次联系解决率、与聊天机器人互动的用户比例、CSAT</td><td>每次对话成本、平均解决时间、升级至人工客服</td></tr>
+<tr><td>代码生成</td><td>对编码标准的遵循度、开发者生产力、代码复用、测试通过率</td><td>常规编码耗时、代码中的缺陷和错误、项目完成时间</td></tr>
+<tr><td>数据分析</td><td>决策准确性、处理更大且更多样数据集的能力、客户对数据驱动产品或服务的满意度、常规任务消除、每次分析节省时间、查询复杂度处理能力</td><td>获得洞察所需时间</td></tr>
+</tbody></table>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Success metrics for different use cases<br>
 Ticket<br>
 routing<br>
 Content<br>
@@ -982,16 +933,23 @@ handling</div></details>
 <p>通过与 AWS 和 Anthropic 合作，将生成式 AI 和机器学习技术应用于研究，Pfizer：</p>
 <ul>
 <li>将从原型到最小可行产品的时间从 3 个多月缩短到 6 周</li>
+</ul>
+<ul>
 <li>每年节省 16,000 小时搜索时间</li>
+</ul>
+<ul>
 <li>将基础设施成本降低 55%</li>
 </ul>
 <p>“我们决定在 AWS 中采用 Anthropic 模型，是因为我们看重 Anthropic 在其模型中提供的安全性。如果从一年时间来看，大约会产生 300,000 份文档，而我们会通过法律编辑流程人工审查其中约 20%。我们用自动化方式在大约 6 周内处理了 300,000 份摘要。”</p>
 <p>Jeff Reihl，LexisNexis Legal &amp; Professional 全球 CTO</p>
-<p>选择模型</p>
+<h2>选择模型 / Choosing a Model</h2>
 <p>Claude 是 Anthropic 开发的一系列先进大语言模型。选择合适的 Claude 模型取决于你的具体用例和需求。以下是需要考虑的一些关键因素：</p>
 <p>1. 能力平衡：根据你的具体需求，权衡智能水平、速度和成本。</p>
-<p>2. 任务复杂度：若要在智能水平和成本之间取得平衡，Claude 3.5 Sonnet 可能最合适，而 Claude 3 Opus 擅长处理最复杂的任务。对于较简单的任务或</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Working with AWS and Anthropic to apply generative AI and<br>
+<ol>
+<li>任务复杂度：若要在智能水平和成本之间取得平衡，Claude</li>
+<li>5 Sonnet 可能最合适，而 Claude 3 Opus 擅长处理最复杂的任务。对于较简单的任务或</li>
+</ol>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Working with AWS and Anthropic to apply generative AI and<br>
 machine learning techniques to its research, Pfizer:<br>
 • Cut time from prototype to minimal viable product from 3+<br>
 months to 6 weeks<br>
@@ -1021,12 +979,18 @@ Opus excels at the most complex tasks. For simpler tasks or</div></details>
 <div class="page-marker">原 PDF 第 20 页 / Source page 20</div>
 <div class="record" data-record-id="p020-b001">
 <p>高吞吐量场景，Claude 3.5 Haiku 可能更合适。</p>
-<p>3. 响应时间：如果近乎即时的响应至关重要，Claude 3.5 Haiku 可能是最佳选择。</p>
+<ol>
+<li>响应时间：如果近乎即时的响应至关重要，Claude</li>
+<li>5 Haiku 可能是最佳选择。</li>
+</ol>
 <p>4. 成本考量：成本通常需要与能力进行取舍，任务越复杂，你就越需要在模型上投入更多成本，以确保持续的高性能。</p>
-<p>5. 上下文窗口：所有 Claude 3 模型（包括 3.5 模型）都提供 200K token 的上下文窗口，这对于处理长文档可能很重要。</p>
+<ol>
+<li>上下文窗口：所有 Claude 3 模型（包括</li>
+<li>5 模型）都提供 200K token 的上下文窗口，这对于处理长文档可能很重要。</li>
+</ol>
 <p>“在我们所有用例中，从代码生成到技术讨论，相比上一版 Claude 3.5 Sonnet，我们在准确性、完整性和可读性方面都看到了 5-10% 的提升。真正令人印象深刻的是，新的审慎推理能力并没有带来我们在其他模型中常见的延迟增加。性能提升与高效处理的结合，使其非常适合为多步骤、智能体式软件开发提供支持。”</p>
 <p>Taylor McCaslin，Gitlab 产品 - 数据科学 AI/ML 小组经理</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">high-throughput scenarios, Claude 3.5 Haiku could be more<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">high-throughput scenarios, Claude 3.5 Haiku could be more<br>
 appropriate.<br>
 3. Response time: If near-instant responsiveness is crucial,<br>
 Claude 3.5 Haiku might be the best choice.<br>
@@ -1053,9 +1017,9 @@ AI/ML, Gitlab</div></details>
 <div class="page-marker">原 PDF 第 21 页 / Source page 21</div>
 <div class="record" data-record-id="p021-b001">
 <p>第 3 阶段：</p>
-<p>为生产环境构建</p>
+<h2>为生产环境构建 / Build for Production</h2>
 <p>既然你已经确定了最佳用例并选定了模型，现在就该构建真正可用的东西了。进入生产环境意味着要周全考虑所有细节，帮助你的 Claude 实现可靠运行并顺畅扩展。无论你是在构建面向客户的功能还是内部工具，下面我们来看看如何让你的用例达到生产就绪状态。</p>
-<h2>提示工程</h2>
+<h2>提示工程 / Prompt Engineering</h2>
 <p>你需要为测试用例构建一个强有力的提示。以下是我们建议的结构，以确保你充分发挥模型能力：</p>
 <p>1 任务 + 角色内容</p>
 <p>2 背景数据、文档和图像</p>
@@ -1064,7 +1028,7 @@ AI/ML, Gitlab</div></details>
 <p>5 当前任务说明或请求</p>
 <p>6 输出格式</p>
 <p>7 预填响应（如需要）</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Stage 3:<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Stage 3:<br>
 Build for production<br>
 Now that you’ve identified the best use case and settled on a<br>
 model it’s time to build something real. Moving to production<br>
@@ -1104,7 +1068,7 @@ we’d structure it to ensure you get the most out of the model:<br>
 <p>（预填）</p>
 <p>&lt;response&gt;&lt;category&gt;</p>
 <p>如果我们想让 Claude 帮助我们分类客户支持工单，我们的提示可能会像这样：</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">System The assistant will be acting as a customer support<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">System The assistant will be acting as a customer support<br>
 ticket classification system.<br>
 The task is to classify the ticket according to the<br>
 rules.<br>
@@ -1139,10 +1103,12 @@ help us classify customer support tickets:</div></details>
 <p>Anthropic 提供了丰富资源来支持你的提示工程工作。推荐资源包括：</p>
 <ul>
 <li>我们的提示工程文档（提示：你可以直接在 Anthropic 文档搜索栏中与 Claude 聊天，用来学习提示设计，或让 Claude 帮你解决遇到的具体问题）</li>
+</ul>
+<ul>
 <li>我们关于核心提示技术和生产级提示的课程</li>
 </ul>
 <p>高效提示：你可以直接在 Anthropic 文档搜索栏中与 Claude 聊天，用来学习提示设计，或让 Claude 帮你解决遇到的具体问题。</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">If you find yourself stuck at the “blank page problem,” we have<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">If you find yourself stuck at the “blank page problem,” we have<br>
 tools on the Anthropic Console to help generate strong starting<br>
 prompts or even improve prompts you already have or want to<br>
 carry over from other models.<br>
@@ -1172,39 +1138,16 @@ unblock you on the specific issues you’re encountering.</div></details>
 <section class="page" id="page-24">
 <div class="page-marker">原 PDF 第 24 页 / Source page 24</div>
 <div class="record" data-record-id="p024-b001">
-<h2>评估</h2>
+<h2>评估 / Evaluation: Build for Production</h2>
 <p>在这一阶段，你将根据已选择的成功标准来评估提示的性能。花在这里的时间会换来性能更高的生产系统，所以不要匆忙跳过。</p>
 <p>评估是迭代的关键。没有强有力的评估测试，你就无法知道自己所做的更改产生的是正面还是负面影响，也会缺少基础设施来有信心地评估并适应未来的模型升级。</p>
-<p>更理想的评估测试通常是：</p>
-<ul>
-<li>非常详细且具体</li>
-<li>可完全自动化（可考虑使用 LLM 作为裁判）</li>
-<li>数量更多，即使质量较低</li>
-</ul>
-<p>不太理想的评估是：</p>
-<ul>
-<li>开放式的</li>
-<li>未自动化且需要人工判断</li>
-<li>质量高但数量非常少</li>
-</ul>
-<p>开发</p>
-<p>测试用例</p>
-<p>设计</p>
-<p>初步</p>
-<p>提示</p>
-<p>用测试用例</p>
-<p>测试</p>
-<p>提示</p>
-<p>优化</p>
-<p>提示</p>
-<p>基于</p>
-<p>留出</p>
-<p>数据测试</p>
-<p>发布</p>
-<p>打磨后的</p>
-<p>提示</p>
-<p>不要忘记边界案例评估</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">EVALUATION<br>
+<h3>更理想的评估测试通常是 / Better Evaluation Tests Are Usually</h3>
+<ul><li>非常详细且具体</li><li>可完全自动化（可考虑使用 LLM 作为裁判）</li><li>数量更多，即使质量较低</li></ul>
+<h3>不太理想的评估是 / Less Ideal Evaluations Are</h3>
+<ul><li>开放式的</li><li>未自动化且需要人工判断</li><li>质量高但数量非常少</li></ul>
+<h3>推荐的评估流程 / Recommended Evaluation Flow</h3>
+<ol><li>开发测试用例</li><li>设计初步提示</li><li>用测试用例测试提示</li><li>优化提示</li><li>基于留出数据测试</li><li>发布打磨后的提示</li><li>不要忘记边界案例评估</li></ol>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">EVALUATION<br>
 During this stage you will evaluate performance of your prompt<br>
 relative to the success criteria that you’ve selected. Time spent<br>
 here will be rewarded with a higher-performing production<br>
@@ -1247,16 +1190,20 @@ don’t forget edge cases evals</div></details>
 <div class="page-marker">原 PDF 第 25 页 / Source page 25</div>
 <div class="record" data-record-id="p025-b001">
 <p>Anthropic Console 提供了一个评估工具，可让你在各种场景下测试提示。</p>
-<p>评估工具提供多项功能，帮助你优化提示：</p>
+<p>工具提供多项功能，帮助你优化提示：</p>
 <ul>
 <li>并排比较：比较两个或更多提示的输出，快速查看更改带来的影响。</li>
+</ul>
+<ul>
 <li>质量评分：按 5 分制对响应质量进行评分，以跟踪每个提示的响应质量改进。</li>
+</ul>
+<ul>
 <li>提示版本控制：创建提示的新版本，并重新运行测试套件，以快速迭代并改进结果。</li>
 </ul>
 <p>你可以通过我们的评估指南或提示评估课程，进一步了解如何构建强有力的评估。</p>
 <p>“通过围绕我们的行业专业知识和具体需求来优化 Claude，我们预计会实现可衡量的改进，以更快速度交付高质量结果。我们已经在 Claude 3 Haiku 上看到了积极成果，而微调将使我们能够更精确地定制 AI 辅助。”</p>
 <p>Joel Hron，Thomson Reuters AI 和 Labs 负责人</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">The Anthropic Console features an Evaluation tool that<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">The Anthropic Console features an Evaluation tool that<br>
 allows you to test your prompts under various scenarios.<br>
 The Evaluation tool offers several features to help you refine<br>
 your prompts:<br>
@@ -1280,19 +1227,25 @@ Joel Hron, Head of AI and Labs, Thomson Reuters</div></details>
 <section class="page" id="page-26">
 <div class="page-marker">原 PDF 第 26 页 / Source page 26</div>
 <div class="record" data-record-id="p026-b001">
-<p>优化</p>
+<h2>优化 / Optimization</h2>
 <p>完成评估测试后，你就可以开始实施优化。以下两种改进策略应成为你工具箱的一部分。</p>
 <p>1. 少样本示例</p>
 <p>这项技术是在提示中提供少量示例（即不止一个），以此教 Claude 如何执行任务。提供示例是提升输出质量最有效的方法之一，尤其是在你已经遵循其他提示最佳实践的情况下。</p>
 <ul>
 <li>你可以在上下文中提供示例，或使用 RAG 动态插入示例</li>
+</ul>
+<ul>
 <li>你的示例中应包含边界案例</li>
+</ul>
+<ul>
 <li>虽然不是必需的，但你可以包含一两个示例，展示不应如何执行该任务</li>
+</ul>
+<ul>
 <li>如果你的数据集中没有足够示例，也可以请 Claude 为你创建更多示例！</li>
 </ul>
 <p>“有时人们认为生成式 AI 成本很高、非常昂贵，但如果你能正确使用它，比如我们在 Bedrock 中使用的一些微调，它会比使用传统模型更便宜。”</p>
 <p>Renan de Padua，iFood 生成式 AI 负责人</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">OPTIMIZATION<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">OPTIMIZATION<br>
 Once you have run your evaluation tests, you can start<br>
 to implement optimizations. Here are two improvement<br>
 strategies that should be part of your toolkit.<br>
@@ -1325,16 +1278,22 @@ Renan de Padua, Head of Generative AI, iFood</div></details>
 <p>让 Claude 思考的好处</p>
 <ul>
 <li>准确性：逐步处理问题可以减少错误，尤其是在数学、逻辑、分析或通常较复杂的任务中。</li>
+</ul>
+<ul>
 <li>连贯性：结构化思考会带来更连贯、组织更清晰的回答。</li>
+</ul>
+<ul>
 <li>调试：看到 Claude 的思考过程有助于你定位提示中可能不清楚的地方。你会得到一个更“可解释”的答案，从而能随着时间推移更成功地引导模型。</li>
 </ul>
 <p>潜在缺点</p>
 <ul>
 <li>输出长度增加可能影响延迟。</li>
+</ul>
+<ul>
 <li>并非所有任务都需要深入思考。应审慎使用 CoT，以确保性能与延迟之间取得适当平衡。</li>
 </ul>
 <p>下面是我们在添加少样本示例和思维链标签后，工单路由提示现在的样子：</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">2. Chain of Thought (CoT)<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">2. Chain of Thought (CoT)<br>
 This technique involves giving Claude space to “think out<br>
 loud”. When faced with complex tasks like research, analysis,<br>
 or problem-solving, chain of thought (CoT) prompting,<br>
@@ -1392,7 +1351,7 @@ adding few shot examples and chain of thought tags:</div></details>
 <p>Assistant</p>
 <p>（预填）</p>
 <p>&lt;response&gt;&lt;category&gt;</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">1 Task context<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">1 Task context<br>
 2 Background data, documents &amp; images<br>
 3 Detailed task description &amp; rules<br>
 4 Examples<br>
@@ -1434,26 +1393,39 @@ Assistant<br>
 <div class="page-marker">原 PDF 第 29 页 / Source page 29</div>
 <div class="record" data-record-id="p029-b001">
 <p>第 4 阶段：</p>
-<h2>部署</h2>
 <p>一旦你的应用能够端到端顺畅运行，就可以部署到生产环境。</p>
 <p>应该做</p>
 <ul>
 <li>渐进式推出你的应用</li>
+</ul>
+<ul>
 <li>为 A/B 测试搭建基础设施</li>
+</ul>
+<ul>
 <li>设计对用户友好的人类反馈方式</li>
+</ul>
+<ul>
 <li>基于生产数据更新你的离线评估</li>
+</ul>
+<ul>
 <li>迭代提示</li>
 </ul>
 <p>不要做</p>
 <ul>
 <li>立即替换你之前的系统</li>
+</ul>
+<ul>
 <li>将离线评估视为静态不变</li>
+</ul>
+<ul>
 <li>基于单次评估测试作出决策</li>
+</ul>
+<ul>
 <li>100% 独自完成这件事。专家（如 Anthropic）可以提供帮助！</li>
 </ul>
 <p>“借助 AWS 和 Anthropic 的 Claude，我们构建了一个解决方案，让 Dashers 能够在需要时可靠且易于理解地获取所需信息。这对我们的用户和整个平台都产生了连锁的积极影响，我们期待未来将其扩展到新的用例。”</p>
 <p>Chaitanya Hari，DoorDash 语音/联络中心产品负责人</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Stage 4:<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Stage 4:<br>
 Deployment<br>
 Once your application runs smoothly end-to-end, you can<br>
 deploy to production.<br>
@@ -1480,15 +1452,16 @@ Chaitanya Hari, Voice/Contact Center Product Lead with DoorDash</div></details>
 <section class="page" id="page-30">
 <div class="page-marker">原 PDF 第 30 页 / Source page 30</div>
 <div class="record" data-record-id="p030-b001">
-<h2>使用 LLMOps 进行部署</h2>
+<h2>使用 LLMOps 进行部署 / Deploying with LLMOps</h2>
 <p>LLMOps 是一套用于在生产环境中将大型语言模型（LLM）运营化的实践与原则。可以把它视为机器学习运维（MLOps）的一个子集，但它专门聚焦于部署和管理 LLM 的独特挑战，例如模型体量庞大、训练要求复杂以及更高的计算需求。</p>
-<p>在 BCG 对 1,400 名 C 级高管的一项调查中，62% 的受访者表示，在实施其 AI 战略时，人才和技能短缺是他们面临的最大挑战。3 培训和变更管理是有效 AI 部署的关键。</p>
+<p>在 BCG 对 1,400 名 C 级高管的一项调查中，62% 的受访者表示，在实施其 AI 战略时，人才和技能短缺是他们面临的最大挑战。3 培训和变更管理是有效 AI</p>
+<p>的关键。</p>
 <p>组织的每个层级都需要不同的 AI 能力：C 级高管需要战略愿景来领导计划，管理者需要具备引导团队完成转型的技能，一线员工则需要实际工具使用能力。理解这些需求有助于制定有针对性的培训计划。</p>
 <p>以下是 LLMOps 最重要的五项最佳实践：</p>
 <p>1. 强大的监控与可观测性</p>
 <p>实施全面监控是成功开展 LLMOps 的基础。这意味着不仅要跟踪响应时间和错误率等基本指标，还要跟踪 LLM 特有的问题，例如 token 使用量和输出质量。关键是创建一个系统，让你能够了解 LLM 在生产环境中的实际表现，从而在问题影响用户之前发现它们。</p>
 <p>3. BCG《有效 AI 技能提升的五项必备要素》</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">DEPLOY WITH LLM OPS<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">DEPLOY WITH LLM OPS<br>
 LLMOps is the set of practices and principles for<br>
 operationalizing Large Language Models (LLMs) in production<br>
 environments. Consider it a subset of Machine Learning Ops<br>
@@ -1528,7 +1501,7 @@ issues before they impact users.<br>
 <p>在设计 LLM 基础设施时要考虑可扩展性，但也要与成本效率取得平衡。实施有效的缓存策略，为不同任务选择合适大小的模型，并优化 token 使用量。监控和分析使用模式，以识别在不影响性能的情况下降低成本的机会。</p>
 <p>5. 持续质量保证</p>
 <p>这包括定期测试模型输出、监控幻觉，并根据业务需求验证回答。与最终用户建立反馈循环，并维护清晰流程，以便在质量问题出现时加以处理。</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">2. Systematic prompt management<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">2. Systematic prompt management<br>
 Like code, prompts need version control, testing, and proper<br>
 documentation. Create a central repository where teams can<br>
 collaborate on prompts, track changes, and understand why<br>
@@ -1564,7 +1537,7 @@ they arise.</div></details>
 <p>这些实践相互支撑，例如，良好的监控有助于为质量保证和成本管理提供依据，而系统化的提示词管理则有助于提升安全性和质量。关键在于将它们作为一项连贯战略的一部分来实施，而不是作为彼此孤立的举措。</p>
 <p>“采用 GenAI 帮助我们以比由写作者人工策划低 80% 的成本，开发了数千种体验和行程。此外，我们的写作者现在可以腾出精力，专注于寻找目的地中的下一件新鲜事，并继续激励世界各地的旅行者。”</p>
 <p>Chris Whyde，Lonely Planet 工程高级副总裁</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Each of these practices supports the others – for instance,<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Each of these practices supports the others – for instance,<br>
 good monitoring helps inform both quality assurance and<br>
 cost management, while systematic prompt management<br>
 contributes to better security and quality. The key is<br>
@@ -1583,12 +1556,13 @@ Chris Whyde, Senior VP of Engineering at Lonely Planet</div></details>
 <div class="page-marker">原 PDF 第 33 页 / Source page 33</div>
 <div class="record" data-record-id="p033-b001">
 <p>Anthropic + AWS</p>
-<p>Anthropic 和 AWS 共同为企业提供卓越的 AI 解决方案。Anthropic 带来前沿安全研究和先进 AI 产品，而 AWS 提供安全、可靠的云基础设施专业能力。二者结合，既能简化 AI 部署和治理，又能加速客户创新。</p>
+<p>Anthropic 和 AWS 共同为企业提供卓越的 AI 解决方案。Anthropic 带来前沿安全研究和先进 AI 产品，而 AWS 提供安全、可靠的云基础设施专业能力。二者结合，既能简化 AI</p>
+<p>和治理，又能加速客户创新。</p>
 <p>选择与 Anthropic 合作并基于 Claude 构建，意味着你可以交付不仅能力强大，而且可靠、安全、符合人类价值观的 AI 解决方案，并且这些解决方案能够与你现有的云基础设施无缝集成。</p>
 <p>请联系 Anthropic 销售团队，了解我们如何与你合作制定成功的 AI 战略。</p>
 <p>“AI 每周都为不同岗位的员工节省数小时。它不只是做更多同样的工作，而是探索新的前沿。它是在为我们的员工释放新的价值和可能性。我们的愿景有两个方面：为每一位客户和每一位员工提供 AI 支持。”</p>
 <p>Varsha Mahadevan，Coinbase 高级工程经理</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">Anthropic + AWS<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">Anthropic + AWS<br>
 Together, Anthropic and AWS provide a superior AI solution<br>
 for enterprises. Anthropic brings frontier safety research and<br>
 advanced AI products, while AWS provides expertise in secure,<br>
@@ -1623,7 +1597,7 @@ Varsha Mahadevan, Senior Engineering Manager at Coinbase</div></details>
 <p>监督学习：一种训练方法，模型从带标签的示例中学习，并基于人类提供的训练数据，系统地将输入映射到正确输出。</p>
 <p>偏好模型：现代 AI 系统中的一个组件，会根据期望特征对潜在输出进行排序，帮助使模型行为与预期结果保持一致。</p>
 <p>强化学习：一种训练方法，模型通过奖励和惩罚系统学习最优行为，并通过试错提升表现。</p>
-<details class="source-fold"><summary>English original</summary><div class="source-text">APPENDIX<br>
+<details class="source-fold"><summary>英文原文 / English original</summary><div class="source-text">APPENDIX<br>
 Essential AI Terminology<br>
 Tokens: The fundamental units of text that language models<br>
 process, typically representing word fragments or individual<br>
